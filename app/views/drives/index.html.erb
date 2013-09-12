@@ -1,0 +1,11 @@
+<h1>Drives#index</h1>
+<table>
+  <tr>
+    <th>ドライブ</th>
+  </tr>
+  <% @drives.each do |drive| %>
+    <tr>
+      <td><%= link_to drive.name, folders_index_path(drive) %></td>
+    </tr>
+  <% end %>
+</table>

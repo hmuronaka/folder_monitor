@@ -1,0 +1,96 @@
+
+life_todo=$HOME/Rails_Projects/folder_monitor/ CD=. filter="*" {
+ Gemfile
+ Gemfile.lock
+ README.rdoc
+ Rakefile
+ config.ru
+  app_controllers=./app/controllers/ writing=. CD=. filter="*" {
+  application_controller.rb
+  drives_controller.rb
+  folders_controller.rb
+  input_form_controller.rb
+  usages_controller.rb
+  }
+  app_models=./app/models CD=. writhing=. filter="*" {
+  drive.rb
+  folder.rb
+  usage.rb
+  }
+  app_views=./app/views CD=. writhing=. filter="**/*" {
+  drives/index.html.erb
+  drives/show.html.erb
+  folders/index.html.erb
+  folders/show.html.erb
+  input_form/input.html.erb
+  input_form/upload.html.erb
+  layouts/application.html.erb
+  usages/index.html.erb
+  usages/show.html.erb
+  }
+  app_helper=./app/helpers/ CD=. writing=. filter="**/*" {
+  application_helper.rb
+  drives_helper.rb
+  folders_helper.rb
+  input_form_helper.rb
+  usages_helper.rb
+  }
+  app_asset=./app/assets/ CD=. writhing=. filter="**/*" {
+  images/rails.png
+  javascripts/application.js
+  javascripts/drives.js.coffee
+  javascripts/folders.js.coffee
+  javascripts/input_form.js.coffee
+  javascripts/usages.js.coffee
+  stylesheets/application.css
+  stylesheets/drives.css.scss
+  stylesheets/folders.css.scss
+  stylesheets/input_form.css.scss
+  stylesheets/usages.css.scss
+  }
+  app_db=./db/ CD=. writhing=. filter="**/*.rb" {
+  migrate/20130912155417_create_drives.rb
+  migrate/20130912160015_create_folders.rb
+  migrate/20130912160112_create_usages.rb
+  schema.rb
+  seeds.rb
+  }
+  app_test=./test/ CD=. writhing=. filter="**/*" { 
+  fixtures/drives.yml
+  fixtures/folders.yml
+  fixtures/usages.yml
+  functional/drives_controller_test.rb
+  functional/folders_controller_test.rb
+  functional/input_form_controller_test.rb
+  functional/usages_controller_test.rb
+  performance/browsing_test.rb
+  test_helper.rb
+  unit/drive_test.rb
+  unit/folder_test.rb
+  unit/helpers/drives_helper_test.rb
+  unit/helpers/folders_helper_test.rb
+  unit/helpers/input_form_helper_test.rb
+  unit/helpers/usages_helper_test.rb
+  unit/usage_test.rb
+  }
+  script=./script/ CD=. writing=. filter=**/*" {
+  rails
+  }
+  config=./config CD=. writing=. filter="**/*" {
+  application.rb
+  boot.rb
+  database.yml
+  environment.rb
+  environments/development.rb
+  environments/production.rb
+  environments/test.rb
+  initializers/backtrace_silencers.rb
+  initializers/inflections.rb
+  initializers/mime_types.rb
+  initializers/secret_token.rb
+  initializers/session_store.rb
+  initializers/wrap_parameters.rb
+  locales/en.yml
+  routes.rb
+  }
+}

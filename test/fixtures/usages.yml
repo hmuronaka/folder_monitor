@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  folder: 
+  file_size: 1
+  file_count: 1
+
+two:
+  folder: 
+  file_size: 1
+  file_count: 1

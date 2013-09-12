@@ -1,0 +1,9 @@
+<div id="header">Input Form</div>
+
+<div id="myform">
+  <%= form_tag(input_form_upload_path, multipart: true) do %>
+    <%= file_field_tag "page[attachment]" %>
+    <%= submit_tag "submit" %>
+  <% end %>
+</div>
+

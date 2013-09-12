@@ -1,0 +1,13 @@
+<h1>Folders#index</h1>
+<table>
+  <tr>
+    <th>名称</th>
+    <th>パス</th>
+  </tr>
+  <% @folders.each do|folder| %>
+  <tr>
+    <td><%= link_to folder.name, usages_index_path(folder) %></td>
+    <td><%= folder.path %></td>
+  </tr>
+  <% end %>
+</table>

@@ -1,0 +1,16 @@
+<h1>Usages#index</h1>
+<%= @folder.name %>
+<table>
+  <tr>
+    <th>登録日</th>
+    <th>ファイルサイズ</th>
+    <th>ファイル数</th>
+  </tr>
+  <% @usages.each do |usage| %>
+    <tr>
+      <td><%= usage.created_at %></td>
+      <td><%= usage.file_size %></td>
+      <td><%= usage.file_count %></td>
+    </tr>
+  <% end %>
+</table>
